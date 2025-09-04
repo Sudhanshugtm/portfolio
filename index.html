@@ -21,45 +21,96 @@
             <p>I create tools and applications while exploring the intersection of development and AI. My projects are learning experiments that solve real problems I've encountered, particularly in content creation and developer tools.</p>
         </section>
 
-        <!-- Projects -->
-        <section class="projects">
-            <h2>Projects</h2>
+        <!-- Featured Work -->
+        <section class="work">
+            <h2>Featured Work</h2>
             
-            <div class="project">
-                <h3>Wikipedia Article Creator</h3>
-                <p class="tech">TypeScript • Vite • Wikimedia Codex • Wikidata API</p>
-                <p>An intelligent article creation tool that helps generate Wikipedia-style articles with proper structure. Built while learning about API integrations and design systems.</p>
-                <div class="links">
-                    <a href="https://github.com/Sudhanshugtm/article-creation" target="_blank">GitHub</a>
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Figma i18n Preview Plugin</h3>
+                    <span class="project-type">Design Tool</span>
+                </div>
+                <div class="project-preview">
+                    <div class="mock-screenshot">
+                        <div class="mock-figma-interface">
+                            <div class="mock-toolbar"></div>
+                            <div class="mock-canvas">
+                                <div class="mock-text-box">Hello World</div>
+                                <div class="mock-text-box translated">Bonjour le monde</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-story">
+                    <p><strong>The Challenge:</strong> Designers struggle with text overflow when creating international interfaces - they can't easily test how their designs look in different languages.</p>
+                    <p><strong>My Solution:</strong> Built a Figma plugin that uses Claude AI to translate interface text in real-time, helping designers catch layout issues early.</p>
+                    <p><strong>What I Learned:</strong> Plugin development, API integration, and how small tools can solve real workflow problems.</p>
+                </div>
+                <div class="project-tech">JavaScript • Figma API • Claude AI • Node.js</div>
+                <div class="project-links">
+                    <a href="https://github.com/Sudhanshugtm/figma-i18n-preview" target="_blank">View Code</a>
                 </div>
             </div>
 
-            <div class="project">
-                <h3>Figma i18n Preview Plugin</h3>
-                <p class="tech">JavaScript • Figma API • Claude API • Node.js</p>
-                <p>A Figma plugin for previewing text in different languages using AI. Created to solve the common design problem of text overflow in international interfaces.</p>
-                <div class="links">
-                    <a href="https://github.com/Sudhanshugtm/figma-i18n-preview" target="_blank">GitHub</a>
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Wikipedia Article Creator</h3>
+                    <span class="project-type">Web App</span>
+                </div>
+                <div class="project-preview">
+                    <div class="mock-screenshot">
+                        <div class="mock-wiki-interface">
+                            <div class="mock-search-bar">Search topics...</div>
+                            <div class="mock-article-preview">
+                                <div class="mock-title">Article Title</div>
+                                <div class="mock-content-lines">
+                                    <div class="mock-line"></div>
+                                    <div class="mock-line short"></div>
+                                    <div class="mock-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-story">
+                    <p><strong>The Problem:</strong> Wikipedia's editing interface can be intimidating for newcomers wanting to contribute knowledge.</p>
+                    <p><strong>My Approach:</strong> Created a guided interface that helps structure articles using Wikidata, making the contribution process more approachable.</p>
+                    <p><strong>Learning Focus:</strong> API integration, design systems (Wikimedia Codex), and user-friendly interface design.</p>
+                </div>
+                <div class="project-tech">TypeScript • Vite • Wikimedia Codex • Wikidata API</div>
+                <div class="project-links">
+                    <a href="https://github.com/Sudhanshugtm/article-creation" target="_blank">View Code</a>
                 </div>
             </div>
 
-            <div class="project">
-                <h3>Weekly Goals Tracker</h3>
-                <p class="tech">React • Express • Node.js • File-based Storage</p>
-                <p>A minimal goals tracking application inspired by Things app design principles. Experiments with file-based storage instead of traditional databases.</p>
-                <div class="links">
-                    <a href="https://github.com/Sudhanshugtm/weekly-goals-tracker" target="_blank">GitHub</a>
-                    <a href="https://mindful-goals-tracker.vercel.app" target="_blank">Live Demo</a>
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Weekly Goals Tracker</h3>
+                    <span class="project-type">Full-Stack App</span>
                 </div>
-            </div>
-
-            <div class="project">
-                <h3>Codex Component Demos</h3>
-                <p class="tech">Vue.js • Wikimedia Codex Design System</p>
-                <p>Demonstrations of Wikimedia's Codex design system components. Built while learning about design systems and Vue.js implementation.</p>
-                <div class="links">
-                    <a href="https://github.com/Sudhanshugtm/codex-demo-form" target="_blank">Form Demo</a>
-                    <a href="https://github.com/Sudhanshugtm/Codex-demo" target="_blank">Components Demo</a>
+                <div class="project-preview">
+                    <div class="mock-screenshot">
+                        <div class="mock-goals-app">
+                            <div class="mock-goal-item">
+                                <div class="mock-checkbox"></div>
+                                <div class="mock-goal-text">Learn new design patterns</div>
+                            </div>
+                            <div class="mock-goal-item completed">
+                                <div class="mock-checkbox checked"></div>
+                                <div class="mock-goal-text">Build portfolio site</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-story">
+                    <p><strong>Design Inspiration:</strong> Loved the simplicity of Things app - wanted to recreate that minimal, celebration-focused experience.</p>
+                    <p><strong>Technical Experiment:</strong> Used file-based storage instead of a database to explore alternative architectures.</p>
+                    <p><strong>Focus Areas:</strong> Minimal UI design, user experience, and backend architecture decisions.</p>
+                </div>
+                <div class="project-tech">React • Express • File-based Storage • JWT Auth</div>
+                <div class="project-links">
+                    <a href="https://github.com/Sudhanshugtm/weekly-goals-tracker" target="_blank">View Code</a>
+                    <a href="https://mindful-goals-tracker.vercel.app" target="_blank">Try It Live</a>
                 </div>
             </div>
         </section>
