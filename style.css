@@ -1,0 +1,154 @@
+/* ABOUTME: Minimalist portfolio styles focusing on typography and clean spacing */
+/* ABOUTME: Uses Inter font family and a simple color palette for readability */
+
+:root {
+    --text-primary: #1a1a1a;
+    --text-secondary: #6b7280;
+    --text-accent: #2563eb;
+    --border-light: #e5e7eb;
+    --background: #ffffff;
+    --background-light: #f9fafb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--background);
+}
+
+.container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+}
+
+/* Typography */
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 0;
+}
+
+/* Sections */
+.hero {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.about {
+    margin-bottom: 3rem;
+}
+
+/* Projects */
+.project {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.project:last-child {
+    border-bottom: none;
+}
+
+.tech {
+    font-size: 0.9rem;
+    color: var(--text-accent);
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+}
+
+.links {
+    margin-top: 1rem;
+}
+
+.links a {
+    color: var(--text-accent);
+    text-decoration: none;
+    margin-right: 1rem;
+    font-size: 0.9rem;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.links a:hover {
+    border-bottom-color: var(--text-accent);
+}
+
+/* Skills */
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.tech-grid span {
+    background-color: var(--background-light);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    border: 1px solid var(--border-light);
+}
+
+/* Contact */
+.contact-links a {
+    color: var(--text-accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.contact-links a:hover {
+    border-bottom-color: var(--text-accent);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .container {
+        padding: 2rem 1rem;
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    .tech-grid {
+        gap: 0.5rem;
+    }
+    
+    .tech-grid span {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+    }
+}
