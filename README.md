@@ -23,4 +23,4 @@ A minimalist portfolio showcasing projects built while learning AI tools and mod
 
 ## Deployment
 
-Automatically deployed to GitHub Pages via GitHub Actions on push to main branch.
+Automatically deployed to GitHub Pages via GitHub Actions on push to main branch.# Trigger deployment
