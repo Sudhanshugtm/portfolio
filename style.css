@@ -2,12 +2,13 @@
 /* ABOUTME: Uses Inter font family and a simple color palette for readability */
 
 :root {
-    --text-primary: #1a1a1a;
-    --text-secondary: #6b7280;
-    --text-accent: #2563eb;
-    --border-light: #e5e7eb;
-    --background: #ffffff;
-    --background-light: #f9fafb;
+    --text-primary: #2d2d2d;
+    --text-secondary: #5d5d5d;
+    --text-accent: #8b5a3c;
+    --border-light: #d4c5b9;
+    --background: #fdfcf8;
+    --background-light: #f5f2ed;
+    --paper-shadow: 0 4px 12px rgba(0, 0, 0, 0.03), 0 2px 4px rgba(0, 0, 0, 0.02);
 }
 
 * {
@@ -18,15 +19,45 @@
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    line-height: 1.6;
+    line-height: 1.7;
     color: var(--text-primary);
-    background-color: var(--background);
+    background-color: #f0ede6;
+    background-image: 
+        radial-gradient(circle at 20px 50px, #f5f2ed 2px, transparent 2px),
+        radial-gradient(circle at 40px 80px, rgba(139, 90, 60, 0.03) 1px, transparent 1px);
+    background-size: 80px 80px;
+    min-height: 100vh;
 }
 
 .container {
     max-width: 640px;
     margin: 0 auto;
     padding: 4rem 1.5rem;
+    background-color: var(--background);
+    box-shadow: var(--paper-shadow);
+    border: 1px solid var(--border-light);
+    border-radius: 0;
+    position: relative;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 60px;
+    bottom: 0;
+    width: 1px;
+    background-color: rgba(139, 90, 60, 0.1);
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: linear-gradient(to right, transparent 0px, rgba(139, 90, 60, 0.05) 40px, rgba(139, 90, 60, 0.05) 60px, transparent 61px);
 }
 
 /* Typography */
@@ -34,6 +65,8 @@ h1 {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
+    position: relative;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.03);
 }
 
 h2 {
@@ -41,12 +74,25 @@ h2 {
     font-weight: 500;
     margin-bottom: 1rem;
     margin-top: 3rem;
+    color: var(--text-accent);
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, var(--border-light), transparent);
 }
 
 h3 {
     font-size: 1.1rem;
     font-weight: 500;
     margin-bottom: 0.25rem;
+    color: var(--text-primary);
 }
 
 p {
@@ -115,10 +161,23 @@ p {
 .tech-grid span {
     background-color: var(--background-light);
     padding: 0.5rem 1rem;
-    border-radius: 6px;
+    border-radius: 2px;
     font-size: 0.9rem;
     color: var(--text-secondary);
     border: 1px solid var(--border-light);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+    position: relative;
+}
+
+.tech-grid span::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    pointer-events: none;
 }
 
 /* Contact */
@@ -135,8 +194,21 @@ p {
 
 /* Responsive */
 @media (max-width: 640px) {
+    body {
+        background-size: 60px 60px;
+    }
+    
     .container {
         padding: 2rem 1rem;
+        margin: 1rem;
+    }
+    
+    .container::before {
+        left: 40px;
+    }
+    
+    .container::after {
+        background: linear-gradient(to right, transparent 0px, rgba(139, 90, 60, 0.05) 30px, rgba(139, 90, 60, 0.05) 40px, transparent 41px);
     }
     
     h1 {
